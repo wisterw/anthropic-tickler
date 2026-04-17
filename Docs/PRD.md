@@ -7,9 +7,6 @@ The tickler app should be written in node. Some of the environment variables may
 - ANTHROPIC_API_KEY
 - PROXY_TYPE (http vs https)
 
-# Functionality
-Come up with a simple but appropriate prompt to test the following features of the Anthropic API.
-
 #  List of Anthropic features to exercise
 
 ## Core API usage
