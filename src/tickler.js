@@ -94,15 +94,12 @@ function parseArgs(argv) {
 
 function getConfig() {
   const apiKey = process.env.ANTHROPIC_API_KEY;
-  const baseUrlRaw = process.env.ANTHROPIC_BASE_URL;
+  const baseUrlRaw = process.env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com';
   const transportScheme = (process.env.TRANSPORT_SCHEME || process.env.PROXY_TYPE || 'https').toLowerCase();
 
   const errors = [];
   if (!apiKey) {
     errors.push('ANTHROPIC_API_KEY is required.');
-  }
-  if (!baseUrlRaw) {
-    errors.push('ANTHROPIC_BASE_URL is required.');
   }
   if (!['http', 'https'].includes(transportScheme)) {
     errors.push('TRANSPORT_SCHEME must be http or https.');

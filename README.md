@@ -12,7 +12,7 @@ Node-based tickler executable for exercising selected Anthropic API features and
 1. Install dependencies:
    - `npm install`
 2. Set required environment variables:
-   - `ANTHROPIC_BASE_URL` (required)
+   - `ANTHROPIC_BASE_URL` (optional, defaults to `https://api.anthropic.com`)
    - `ANTHROPIC_API_KEY` (required)
    - `TRANSPORT_SCHEME` (`http` or `https`, optional, defaults to `https`)
 

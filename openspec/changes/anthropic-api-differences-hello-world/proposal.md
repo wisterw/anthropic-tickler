@@ -10,7 +10,7 @@ An overall `pass` results if the prompt returns an answer (any answer), without 
 
 # Settings / environment variables
 The tickler app should be written in node. Some of the environment variables may include:
-- ANTHROPIC_BASE_URL. Required.
+- ANTHROPIC_BASE_URL. Default to https://api.anthropic.com
 - ANTHROPIC_API_KEY.  Required.
 - TRANSPORT_SCHEME.  Which protocol (http vs https) the app will use to connect to the Anthropic API.  If not specified, assume https.
 
