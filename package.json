@@ -1,0 +1,18 @@
+{
+  "name": "anthropic-tickler",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Tickler executable for exercising Anthropic API features",
+  "scripts": {
+    "tickler": "node src/tickler.js",
+    "tickler:basic": "node src/tickler.js --mode basic",
+    "tickler:advanced": "node src/tickler.js --mode advanced"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.54.0"
+  }
+}
